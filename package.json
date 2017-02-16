@@ -1,6 +1,6 @@
 {
   "name": "react-dom-obj-firebase",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Uses react-dom-obj to create a real-time DOM synced with Firebase",
   "main": "index.js",
   "scripts": {
