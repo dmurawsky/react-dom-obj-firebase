@@ -1,0 +1,29 @@
+{
+  "name": "react-dom-obj-firebase",
+  "version": "0.1.0",
+  "description": "Uses react-dom-obj to create a real-time DOM synced with Firebase",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmurawsky/react-dom-obj-firebase.git"
+  },
+  "keywords": [
+    "react",
+    "firebase"
+  ],
+  "author": "Daniel Murawsky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmurawsky/react-dom-obj-firebase/issues"
+  },
+  "homepage": "https://github.com/dmurawsky/react-dom-obj-firebase#readme",
+  "dependencies": {
+    "firebase": "3.6.9",
+    "react-dom": "15.4.2",
+    "react-dom-obj": "0.1.1"
+  },
+  "devDependencies": {}
+}
