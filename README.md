@@ -21,3 +21,16 @@ RedomoFB.start('firebase-path');
 
 // Call RedomoFB.stop('firebase-path'); to stop real-time updates from Firebase
 ```
+
+# Example Firebase Snapshot
+
+
+```json
+{
+  "id" : "app",
+  "dom" : {
+    "type" : "h1",
+    "content" : "Realtime DOM Test!"
+  }
+}
+```
