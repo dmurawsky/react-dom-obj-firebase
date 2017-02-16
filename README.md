@@ -1,47 +1,23 @@
 # React DOM Object
 
-Pass a JavaScript Object into ReactDOM
+Uses react-dom-obj to create a real-time DOM synced with Firebase
 
 ## Usage
 
 ```sh
-npm install react-dom react-dom-obj --save
+npm install react-dom-obj-firebase --save
 ```
 
 ```javascript
-import ReactDOM from 'react-dom';
-import Redomo from 'react-dom-obj';
+import RedomoFB from 'react-dom-obj-firebase';
 
-const obj = [
-  {
-    type: 'h1',
-    content: 'ToDo List'
-  },
-  {
-    type: 'ul',
-    params: {
-      style: {
-        listStyle: 'none'
-      }
-    },
-    content: [
-      {
-        type: 'li',
-        content: [
-          { type: 'input', params: { type: 'checkbox' } },
-          { type: 'span', content: 'Create interface for converting YAML to React DOM'}
-        ]
-      },
-      {
-        type: 'li',
-        content: [
-          { type: 'input', params: { type: 'checkbox' } },
-          { type: 'span', content: 'Create realtime interface with Firebase'}
-        ]
-      }
-    ]
-  }
-];
+RedomoFB.init({
+  apiKey: <FIREBASE_API_KEY>,
+  authDomain: <FIREBASE_AUTH_DOMAIN>,
+  databaseURL: <FIREBASE_DATABASE_URL>
+});
 
-ReactDOM.render(Redomo(obj), document.getElementById('redomo'));
+RedomoFB.start('firebase-path');
+
+// Call RedomoFB.stop('firebase-path'); to stop real-time updates from Firebase
 ```

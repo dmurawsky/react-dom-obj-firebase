@@ -11,7 +11,8 @@ function stop(path) {
 }
 
 function cb(snap) {
-  ReactDOM.render(Redomo(snap.val()));
+  var val = snap.val();
+  ReactDOM.render(Redomo(val.dom), document.getElementById(val.id));
 }
 
 module.exports = {
